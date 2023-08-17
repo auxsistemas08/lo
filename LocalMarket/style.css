@@ -1,0 +1,180 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Estilos del encabezado */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #7DBB91; /* Cambia el color de fondo a verde manzana (#7DBB91) */
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(101, 97%, 48%, 0.774), hsla(113, 45%, 52%, 0.664)), url(img_local/localMrket.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(113, 95%, 50%, 0.459), hsla(110, 45%, 52%, 0.664)), url(img_local/localMrket.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+nav > a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    transition: transform 0.3s ease-in-out; 
+    
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: 40px auto;
+  
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 10px; 
+    background-size: cover; 
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.144);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    z-index: 1;
+   
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666666;
+    z-index: 1;
+   
+}
+
+ /* Estilos para la isla flotante */
+ .social-floating-island {
+    position: fixed;
+    top: 50%; /* Centrar verticalmente */
+    right: -80px;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.411);
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    border-radius: 20px;
+    transition: right 0.3s ease; /* Animación de desplazamiento */
+}
+
+/* Estilos para los enlaces de las redes sociales */
+.social-floating-island a {
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* Estilos de las imágenes de las redes sociales */
+.social-floating-island img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.411);
+    
+
+    
+}
+
+/* Estilos para la flecha de mostrar/ocultar */
+.toggle-arrow {
+    position: fixed;
+    top: 50%;
+    right: 0; /* Ajustado para que esté pegado a la isla */
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 0 10px 10px 0; /* Ajustado para que la flecha esté en el lado derecho */
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+    z-index: 1001; /* Asegura que esté sobre la isla flotante */
+}

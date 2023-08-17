@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>LocalMarket - Compra Productos Locales</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="background-image">
+
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Bienvenido a LocalMarket</h1>
+            <h2>Tu plataforma para comprar productos locales frescos y de calidad.</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    
+    <main>
+        <section class="features">
+            <div class="feature">
+                <h2>Selección de Productos Locales</h2>
+                <p>Explora una amplia variedad de alimentos frescos y productos locales disponibles para tu compra.</p>
+            </div>
+            <div class="feature">
+                <h2>Perfiles de Productores y Comercios</h2>
+                <p>Obtén información detallada sobre los productores y comercios locales, sus productos y reseñas de otros usuarios.</p>
+            </div>
+            <div class="feature">
+                <h2>Búsqueda y Filtro Avanzado</h2>
+                <p>Encuentra fácilmente los productos que deseas mediante opciones de búsqueda y filtros personalizables.</p>
+            </div>
+            <div class="feature">
+                <h2>Compras y Pagos en Línea</h2>
+                <p>Selecciona tus productos, agrega al carrito y realiza pagos seguros en línea desde la comodidad de tu hogar.</p>
+            </div>
+            <div class="feature">
+                <h2>Opciones de Entrega</h2>
+                <p>Elige entre diferentes opciones de entrega, incluyendo a domicilio y puntos de recolección cercanos.</p>
+            </div>
+            <div class="feature">
+                <h2>Sistema de Calificaciones y Reseñas</h2>
+                <p>Califica y deja reseñas sobre los productos y servicios para ayudar a otros usuarios en sus decisiones de compra.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-floating-island">
+        <!-- Enlace de Facebook -->
+        <a href="fb://page/salesinmobiliaria" target="_blank">
+            <img src="iconos/face.jpg" alt="Página de Facebook">
+        </a>
+        <!-- Enlace de Instagram -->
+        <a href="https://www.instagram.com/TUPAGINA" target="_blank">
+            <img src="iconos/insta.jpg" alt="Página de Instagram">
+        </a>
+
+        <!-- Enlace a un perfil de Twitter -->
+        <a href="https://twitter.com/TUUSUARIO" target="_blank">
+            <img src="iconos/twitter.jpeg" alt="Perfil de Twitter">
+        </a>
+
+        <!-- Enlace a un perfil o video de TikTok -->
+        <a href="https://www.tiktok.com/@TUPERFIL" target="_blank">
+            <img src="iconos/tiktok1.png" alt="Perfil o video de TikTok">
+        </a>
+    
+    </div>
+    <!-- Flecha de mostrar/ocultar -->
+    <div class="toggle-arrow" id="toggleArrow">&#10148;</div>
+    <script>
+        const socialFloatingIsland = document.querySelector('.social-floating-island');
+        const toggleArrow = document.getElementById('toggleArrow');
+        let islandVisible = true;
+    
+        // Mostrar u ocultar la isla flotante al hacer clic en la flecha
+        toggleArrow.addEventListener('click', () => {
+            if (islandVisible) {
+                socialFloatingIsland.style.right = '-80px';
+                toggleArrow.style.right = '0';
+            } else {
+                socialFloatingIsland.style.right = '0';
+                toggleArrow.style.right = '60px';
+            }
+            islandVisible = !islandVisible;
+        });
+    </script>
+    <footer>
+        <p>&copy; 2023 LocalMarket. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
